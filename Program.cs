@@ -12,7 +12,7 @@ double CalculateBill(double d)
     {
         case < 200: return d * 1.2;
         case < 400: return 238.8 + (d - 199) * 1.5;
-        case < 600: return 238.8 + 300 + (d - 399) * 1.8;
-        default: return 238.8 + 300 + 360 + (d - 599) * 2;
+        case < 600: return 1.15*(238.8 + 300 + (d - 399) * 1.8);
+        default: return 1.15*(238.8 + 300 + 360 + (d - 599) * 2);
     }
 }
